@@ -1,2 +1,2 @@
 # USACO-Bronze
-This repository includes the code used in the USA Computing Olympiad Exam at the Bronze Division of January 2021. I cleared the exam with a perfect score of 1000/1000 using this code.
+This repository includes the code used in the USA Computing Olympiad Exam for practice and the actual exam. I cleared the Bronze Division with a perfect score of 1000/1000 in January 2021 and qualified for the Silver Division.
