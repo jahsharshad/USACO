@@ -1,1 +1,1 @@
-# Received a 1000/1000 on the December 2021 USACO Bronze exam
+# Received a 733/1000 on the December 2020 USACO Bronze exam
