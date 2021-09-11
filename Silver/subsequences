@@ -1,0 +1,37 @@
+fin = open('div7.in', 'r')
+fout = open('div7.out', 'w')
+
+q = int(fin.readline())
+nums = [0]
+for i in range(q):
+    nums.append((nums[-1]+int(fin.readline()))%7)
+length = len(nums)
+
+def findIndex(key):
+    start = -1
+
+    # Traverse from beginning to find
+    # first occurrence
+    for i in range(length):
+        if nums[i] == key:
+            start = i
+            break
+
+    if start == -1:
+        return 0
+
+    # Traverse from end to find last
+    # occurrence.
+    end = start
+    for i in range(length - 1, start - 1, -1):
+        if nums[i] == key:
+            end = i
+            break
+    return end-start
+
+photo = 0
+for i in range(7):
+    photo = max(photo, findIndex(int(i)))
+
+fout.write(str(photo))
+fout.close()
